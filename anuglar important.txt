@@ -1,0 +1,58 @@
+angular important 
+
+1.node js install with webiste
+
+2. angular installation on your system : -
+npm install -g @angular/cli
+
+3.fevicon modification image
+
+4.font awesome :- 
+npm install --save @fortawesome/fontawesome-free
+
+5.bootstrap 5 : - npm i bootstrap --save
+
+6.jquery6: npm i jquery --save
+        : npm i @types/jquery --save
+        : tsconfig.app.json: -   "types": ["jquery"]
+        
+7animate.css:-
+npm i animate.css --save
+
+8.aos :-
+        npm install aos --save
+        npm i --save -dev @types/aos
+        
+        app.component.ts:-
+        import * as AOS from 'aos';
+        ngOnInit(): void {
+            // aos
+            AOS.init();
+        }
+ 
+9. ngx owl carousel:-
+    npm i ngx-owl-carousel-o --save
+    npm i tslib --save
+    import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
+
+
+
+
+angular.json:-
+
+                        "styles": [
+                            "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                            "node_modules/animate.css/animate.min.css",
+                            "node_modules/aos/dist/aos.css",
+                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+                            "src/styles.css"
+                        ],
+                        "scripts": [
+                            "node_modules/jquery/dist/jquery.min.js",
+                            "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+                            "node_modules/aos/dist/aos.js"
+                        ]
